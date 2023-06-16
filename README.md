@@ -51,5 +51,4 @@ isCompleted boolean default false
 npm start
 ```
 
-Congratulations 🎉 Now you have a functional To-do list App working locally.
-**Do not forget to give it a star** ⭐🌟⭐ 
+Congratulations 🎉 **Do not forget to give it a star** ⭐🌟⭐ 
