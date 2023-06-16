@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.todo.NoteController">
+   <children>
+      <AnchorPane fx:id="childVbox" layoutX="4.0" layoutY="19.0" prefHeight="808.0" prefWidth="535.0" stylesheets="@styles.css">
+         <children>
+             <TextField fx:id="taskField" layoutX="26.0" layoutY="135.0" prefHeight="38.0" prefWidth="428.0" promptText="Enter a task" styleClass="text-field" stylesheets="@Styles/styles.css" />
+             <ListView fx:id="taskList" layoutX="24.0" layoutY="198.0" prefHeight="572.0" prefWidth="485.0" />
+            <ImageView fitHeight="44.0" fitWidth="47.0" layoutX="177.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Assets/logo.png" />
+               </image>
+            </ImageView>
+            <Label alignment="CENTER" layoutX="218.0" layoutY="7.0" prefHeight="59.0" prefWidth="100.0" styleClass="txt" text="To-Do" textFill="#06a1ee" underline="true">
+               <font>
+                  <Font name="Ink Free" size="36.0" />
+               </font>
+            </Label>
+            <Button alignment="CENTER" layoutX="462.0" layoutY="132.0" lineSpacing="15.0" mnemonicParsing="false" onAction="#addTask" prefHeight="40.0" prefWidth="47.0" stylesheets="@Styles/styles.css" textAlignment="CENTER">
+               <styleClass>
+                  <String fx:value="btn" />
+                  <String fx:value="cursor-pointer" />
+                  <String fx:value="shadow" />
+               </styleClass>
+               <graphic>
+                  <ImageView fitHeight="25.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Assets/add.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Label layoutX="76.0" layoutY="84.0" text="&quot;Believe you can and you're halfway there.&quot; - Theodore Roosevelt" textFill="#30a6ff">
+               <font>
+                  <Font name="Georgia Italic" size="13.0" />
+               </font>
+            </Label>
+         </children>
+         <styleClass>
+            <String fx:value="txt" />
+            <String fx:value="vBox" />
+         </styleClass>
+      </AnchorPane>
+   </children>
+</AnchorPane>

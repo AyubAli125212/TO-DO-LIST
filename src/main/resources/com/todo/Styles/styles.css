@@ -1,0 +1,131 @@
+
+.btn {
+    
+    -fx-padding: 10px;
+    -fx-spacing: 10px;
+    -fx-margin: 10px;
+    -fx-background-color: #2196F3;
+    -fx-background-radius: 100px;
+    -fx-text-fill: #fff;
+    -fx-font-weight:bold;
+    -fx-transition: all 2.5s ease;
+    }
+    .btn:hover{
+        /* -fx-background-color: #3d9bff; */
+    }
+    /* Typography */
+    .txt {
+    -fx-font-family: Arial, sans-serif;
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #2196F3;
+    -fx-text-alignment: center;
+    -fx-text-overrun: ellipsis;
+    -fx-text-wrap: true;
+    -fx-line-spacing: 1.2em;
+    }
+    .txt:hover{
+        -fx-text-fill: #252525;
+    }
+    .lable{
+        -fx-font-family: Arial, sans-serif;
+        -fx-font-size: 13px;
+        -fx-font-weight: bold;
+        -fx-text-fill: #050505;
+        -fx-text-alignment: center;
+        -fx-text-overrun: ellipsis;
+        -fx-text-wrap: true;
+        -fx-line-spacing: 1.2em;
+        -fx-strikethrough: true;
+    }
+    /* Backgrounds */
+
+    /* Box Shadows */
+    .shadow {
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.5), 10, 0, 0, 0);
+    }
+    
+    /* Transitions */
+    .transition {
+    -fx-transition-duration: 2.5s;
+    }
+    
+    /* Cursor */
+    .cursor-pointer {
+    -fx-cursor: hand;
+    }
+    
+    /* Display */
+    .display-flex {
+    -fx-display: flex;
+    -fx-flex-wrap: wrap;
+    -fx-justify-content: center;
+    -fx-align-items: center;
+    }
+
+
+
+
+
+    /* Text Field */
+.text-field {
+    -fx-background-color: #fff;
+    -fx-background-radius: 5px;
+    -fx-background-insets: 0px;
+    -fx-border-color: #ccc;
+    -fx-border-width: 1px;
+    -fx-border-radius: 5px;
+    -fx-padding: 5px;
+    -fx-font-size: 16px;
+    -fx-text-fill: #333;
+    }
+    
+    /* Text Field Focused */
+    .text-field:focused {
+        -fx-border-color: #2196F3;
+    -fx-border-width: 2px;
+    }
+    
+    /* Text Field Disabled */
+    .text-field:disabled {
+    -fx-opacity: 0.5;
+    }
+    
+    /* Text Field Prompt Text */
+    .text-field .prompt-text {
+    -fx-text-fill: #aaa;
+    }
+    
+    /* Text Field Hover */
+    .text-field:hover {
+    -fx-background-color: #f5f5f5;
+    }
+
+    /* CheckBox */
+    .check-box {
+    -fx-padding: 5px;
+    -fx-font-size: 16px; /* increase font size to make checkbox bigger */
+    -fx-text-fill: white; /* set text color */
+    }
+    
+    /* CheckBox Selected */
+    .check-box:selected {
+    -fx-text-fill: #fff;
+    }
+
+
+
+
+    .hbox{
+        -fx-background-color: #d8dee6;
+    }
+    
+
+    .scroll-pane {
+        -fx-background-color: #ffffff;
+        -fx-background-insets: 0;
+        -fx-padding: 10;
+    }
+    
+    
+    

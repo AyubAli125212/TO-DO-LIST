@@ -1,0 +1,66 @@
+
+.root {
+    -fx-background-image: url('Assets/bg.jpg');
+    -fx-background-size: cover;
+}
+.check-box .box {
+    -fx-shape: "M 50 0 A 50 50 0 1 1 50 100 A 50 50 0 1 1 50 0";
+    -fx-background-color: #FFFFFF;
+    -fx-background-radius: 50%;
+    -fx-border-color: #2196F3; /* Add border color */
+    -fx-border-width: 2px; 
+}
+.check-box:selected .box {
+    -fx-background-color: #2196F3;
+}
+.check-box .box .mark {
+    -fx-mark-color: white;
+}
+.task-item {
+    -fx-padding: 0px;
+    -fx-background-color: rgb(255, 255, 255);
+    -fx-border-radius: 5px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 10, 0, 0, 2);
+}
+.task-item .label{
+    -fx-text-fill: #000000;
+}
+
+.list-view {
+    -fx-control-inner-background: transparent;
+    -fx-background-color: transparent;
+
+}
+.vBox {
+    -fx-background-color: transparent; /* Make the ListView transparent */
+}
+
+.list-view .scroll-bar:vertical {
+    -fx-background-color: rgb(255, 255, 255); /* Set the background color of the vertical scrollbar */
+    -fx-pref-width: 15px; /* Set the width of the vertical scrollbar */
+    -fx-color:rgb(126, 124, 124);
+    -fx-opacity: 0;
+}
+
+.list-view .scroll-bar:horizontal {
+    -fx-background-color: rgb(255, 255, 255); /* Set the background color of the horizontal scrollbar */
+    -fx-pref-height: 15px; /* Set the height of the horizontal scrollbar */
+    -fx-opacity: 0;
+
+}
+
+.list-view .list-cell:filled:selected {
+    -fx-background-color: rgb(255, 255, 255); 
+    -fx-border-color: #2196F3; /* Set the border color for the selected row */
+    -fx-border-width: 2px; /* Adjust border width */
+    -fx-border-radius: 5px; 
+}
+
+.list-view .list-cell:filled:hover {
+    -fx-background-color: rgb(255, 255, 255);
+    -fx-border-color: #2196F3; /* Set the border color for the hovered row */
+    -fx-border-width: 2px; /* Adjust border width */
+    -fx-border-radius: 5px;
+    -fx-transition: all 0.7s; /* Apply a transition to smooth the scaling */
+    -fx-transform: scale(3.05); /* Scale the row to 105% */
+}
